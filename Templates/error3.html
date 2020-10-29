@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Error</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="{{url_for('static',filename='favicon.ico')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}">
+</head>
+
+<body>
+	<div class="container-login100" style="background-image: url('/static/images/3.jpg')">
+		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+			<form class="login100-form validate-form">
+				<span class="login100-form-title p-b-37">
+					Validación fallida, datos incorrectos
+				</span>
+				
+				<div class="container-login100-form-btn">
+					<button class="login100-form-btn">
+                        <a href="/validar">
+                            Regresar
+                        </a>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

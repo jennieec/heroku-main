@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Validación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bootstrap.min.css')}}" >
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='asp.css')}}">
+</head>
+
+<body>
+  <div id="header-wrapper">
+    <header id="header" class="container">
+      <div id="logo">
+        <h1><a href="/inicio">Go faster</a></h1>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li class="current"><a href="/login">Cerrar sesión</a></li>
+          <li class="current"><a href="/inicio">Regresar</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+<section>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="title">
+              <i class="fa fa-address-book" aria-hidden="true"></i>
+              <h2>Validar INE</h2>
+              <div class="option">
+              <ul>
+                <input  type="file" name="iden" id="iden" multiple="multiple">
+                <button  type="submit" id="identificacion">Subir</button>
+              </form>
+             </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card text-center">
+          <div class="title">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <h2>Validar comprobante</h2>
+            <div class="option">
+            <ul>
+              <input  type="file" name="comp" id="comp" multiple="multiple">
+              <button  type="submit" id="comprobante">Subir</button>
+            </form>
+           </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card text-center">
+        <div class="title">
+          <i class="fa fa-address-book" aria-hidden="true"></i>
+          <h2>Validar Certificado</h2>
+          <div class="option">
+          <ul>
+            <input  type="file" name="esc" id="esc" multiple="multiple">
+            <button  type="submit" id="escolaridad" >Subir</button>
+          </form>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </div>        
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="../static/ine.js"></script>
+
+
+</body>
+</html>
