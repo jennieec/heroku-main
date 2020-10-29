@@ -1,1 +1,1 @@
-web: gunicorn Controlador:app --log-file=-
+web: gunicorn Controlador:app
